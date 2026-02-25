@@ -1,0 +1,11 @@
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "SAMEORIGIN"
+X-Content-Type-Options = "nosniff"
+
+[[headers]]
+for = "/docs/*.docx"
+[headers.values]
+Content-Type = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+Content-Disposition = "attachment"
